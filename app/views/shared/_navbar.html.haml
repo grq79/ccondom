@@ -1,15 +1,8 @@
+
 .container
   .row
     .col-md-6.ptm
+    
       = render "shared/twitter_btn"
     .col-md-6.text-right.ptm
-
-      - if current_user
-        %span.text-muted
-          Logged in as
-          %b= current_user.email
-          |
-        = link_to "Logout", destroy_user_session_path(@resource), method: :delete if current_user
-      - else
-        %span.text-muted Already invited?
-        = link_to "Sign in", new_user_session_path unless current_user
+    

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @meta_title %></title>
+	<meta name="keywords" content="<%= @meta_keywords %>" />
+	<meta name="description" content="<%= @meta_description %>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= render "3rd_party/google" %>
+</head>
+<body class="application <%= controller.controller_name %> <%= controller.controller_name %>-<%= controller.action_name %>">
+  <%= render "shared/notice" %>
+  <%= render "shared/navbar" %>
+  <div class="yield">
+    <%= yield %>
+  </div>
+  <%= render "shared/footer" %>
+</body>
+</html>

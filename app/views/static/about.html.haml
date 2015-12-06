@@ -1,0 +1,32 @@
+.container
+  .row
+    .col-md-3
+
+    .col-md-6.text-center.mtxl
+      %h1.heading-l.mbxl
+        = "Your<span class='font-red'>Logo</span>".html_safe
+
+      %h1.heading-l How will this make your potential user's life better? The primary benifit.
+      %h2.lead.text-muted
+        Explain in more detail how your app/service will actualy provide that benifit.
+
+      .mtxl.mbxl
+        = render "subscribers/form"
+
+      .benifit.text-left.mbxl
+        %h3.heading-s Re-state Your Primary Benifit
+        %p.lead
+          Describe further how you might provide this benifit perhaps including a screenshot of a mock up.
+
+      .benifit.text-left.mbxl
+        %h3.heading-s Your Secondary Benifit
+        %p.lead
+          Describe further how you might provide this benifit perhaps including a screenshot of a mock up.
+
+      .benifit.text-left
+        %h3.heading-s Any Other Benifits
+        %p.lead
+          Describe further how you might provide this benifit perhaps including a screenshot of a mock up.
+
+
+    .col-md-3
