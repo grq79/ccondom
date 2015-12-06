@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Rails4landing::Application.load_tasks
+Ccondom::Application.load_tasks

@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rails4landing_development
+  database: ccondom_development
   pool: 5
   password:
 
@@ -45,13 +45,13 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: rails4landing_test
+  database: ccondom_test
   pool: 5
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: rails4landing_production
+  database: ccondom_production
   pool: 5
   password:
